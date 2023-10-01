@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+:root {
+    --cor-laranja: #D29214;
+    --cor-marrom: #2B1E04;
+    --cor-branca: #ffffff;
+
+    --fonte-oswald: 'Oswald', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    background-color: var(--cor-marrom);
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__logo__img {
+    width: 24%;
+    padding: 1%;
+}
+
+.cabecalho__navegacao__links {
+    display: flex;
+    gap: 50%;
+}
+
+.cabecalho__navegacao__links__pages {
+    font-family: var(--fonte-oswald);
+    font-size: 1.5rem;
+    color: var(--cor-branca);
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--fonte-oswald);
+    background-color: var(--cor-laranja);
+    color: var(--cor-branca);
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6.7% 16% 3.3% 16%;
+}
+
+.conteudo__meutexto {
+    font-size: 2rem;
+    width: 63%;
+}
+
+strong {
+    font-size: 3.4rem;
+}
+
+.conteudo__fotominha {
+    width: 31%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 14% 5% 14%;
+    gap: 20px;
+}
+
+.info__textosobre {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 20px;
+}
+
+.info__textosobre__mim {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info__textosobre__mim__subtitulo {
+    font-size: 2.25rem;
+}
+
+.info__textosobre__mim__lista {
+    padding: 0px 0px 20px 0 ;
+}
+
+.links {
+    padding: 3% 0% 3% 35.4%;
+    display: flex;
+    width: 41%;
+}
+
+.links__images {
+    width: 20%;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--cor-marrom);
+    color: var(--cor-branca);
+    padding: 20px;
+}
+
+li {
+    list-style-type: nome;
+}
+
+@media (max-width: 1300px){   
+    .cabecalho{
+        flex-direction: column;
+    }
+
+    .cabecalho__logo {
+        text-align: center;
+    }
+        
+    .cabecalho__logo__img{
+        text-align: center;
+        width: 100px;
+    }
+
+    .cabecalho__navegacao__links {
+        padding: 2% 25% 2% 25%;
+        gap: 0;
+        /*gap: 15%;
+        width: 100%;*/
+    }
+
+    .conteudo{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0%;
+    }
+
+    .info__textosobre__mim {
+        width: 100%;
+        font-size: 45%;
+    }
+
+    .info__textosobre__mim__subtitulo {
+        font-size: 55%;
+    }
+}
